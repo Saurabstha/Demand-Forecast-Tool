@@ -6,7 +6,7 @@ from sklearn.cross_validation import train_test_split
 from sklearn.metrics import explained_variance_score
 import matplotlib.pyplot as plt
 
-dataset = pd.read_csv(r"F:\TERI\Demand.csv",sep=",")
+dataset = pd.read_csv(r"F:\TERI\MESCOM.csv",sep=",")
 dataset.head()
 
 dataset = dataset.drop(dataset.query('demand=="NaN"').index)
